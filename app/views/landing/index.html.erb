@@ -1,2 +1,8 @@
-<h2>Learning Rails</h2>
-<p>Rails is a pretty awesome web framework</p>
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <em><%= article.title %></em> <br>
+      <%= article.content %>
+    </li>
+  <% end %>
+</ul>
