@@ -12,6 +12,8 @@ class ArticlesController < ApplicationController
     redirect_to article
   end
 
+  # GET /articles/:id
   def show
+    @article = Article.find(params[:id])
   end
 end
