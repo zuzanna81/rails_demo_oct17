@@ -38,8 +38,9 @@ Then("show me the page") do
   save_and_open_page
 end
 
-Given("I visit the {string} page") do |string|
-  pending
+Given("I visit the {string} page") do |article_title|
+  article = Article.find_by(title: article_title)
+  visit article_path(article)
 end
 
 When("I click the {string} button") do |string|
