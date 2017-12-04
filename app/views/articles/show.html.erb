@@ -3,5 +3,11 @@
 <%= form_for [@article, @comment] do |f| %>
   <%= f.label :body %>
   <%= f.text_area :body %>
-  <%= f.submit %> 
+  <%= f.submit %>
+<% end %>
+
+<% @article.comments.each do |comment| %>
+  <p>
+    <%= comment.body %>
+  </p>
 <% end %>
