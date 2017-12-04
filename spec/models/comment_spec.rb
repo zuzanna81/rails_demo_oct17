@@ -15,4 +15,8 @@ RSpec.describe Comment, type: :model do
       expect(FactoryBot.create(:comment)).to be_valid
     end
   end
+
+  context 'Associations' do
+    it { is_expected.to belong_to :article }
+  end
 end
