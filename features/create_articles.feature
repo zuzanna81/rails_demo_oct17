@@ -23,7 +23,9 @@ Feature: Create articles
     And I should see "Too much magic"
     And I should see "Trying to wrap my head around rails magic"
 
-  # Scenario: Blogger doesn't enter a title for the article [Sad Path]
-  #   When I fill in "Content" with "Excited about learning a new framework"
-  #   And I click "Create Article" button
-  #   Then I should see "Title can't be blank"
+  Scenario: Blogger doesn't enter a title for the article [Sad Path]
+    When I fill in "Content" with "Excited about learning a new framework"
+    And I click "Create Article" button
+    Then show me the page
+    Then I should see "Title can't be blank"
+    Then I should not see "Content can't be blank"

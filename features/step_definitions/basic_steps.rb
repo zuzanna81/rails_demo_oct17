@@ -1,5 +1,5 @@
 Given('I visit the landing page') do
-  visit '/'
+  visit root_path
 end
 
 Then("I should see {string}") do |content|
@@ -26,7 +26,12 @@ end
 
 Then("I should be on {string} page") do |article_title|
   article = Article.find_by(title: article_title)
-  expect(page.current_path).to eq "/articles/#{article.id}"
+  expect(page.current_path).to eq article_path(article)
+end
+
+Then("I should not see {string}") do |content|
+  # expect(page).not_to have_content content
+  expect(page).to have_no_content content
 end
 
 Then("show me the page") do
