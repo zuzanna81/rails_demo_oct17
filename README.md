@@ -49,7 +49,7 @@ class Application < Rails::Application
   ...
 end
 ```
-6. Open **.rspec** file and add the following lines at the top:
+6. Open **.rspec** file and add the following lines:
 ```
 --color
 --format documentation
@@ -68,7 +68,7 @@ end
 9. Run `rails db:create` & `rails db:migrate`
 10. Run `bundle exec cucumber`to check if cucumber works
 
-** Display list of articles on the landing page - Acceptance-Unit Test Cycle**
+**Display list of articles on the landing page - Acceptance-Unit Test Cycle**
 
 1. Create a high-level test file:
 * `touch features/list_articles.feature`
@@ -97,8 +97,8 @@ end
 Then(/^I should see "([^"]*)"$/) do |content|
   expect(page).to have_content content
 end
-* Run `cucumber`
 ```
+* Run `cucumber`
 5. Modify **config/routes.rb**:
 ```
 Rails.application.routes.draw do
@@ -114,7 +114,7 @@ end
     create app/views/landing/index.html.erb
     invoke rspec
 ```
-7. Add some <p> </p> to the **app/views/landing/index.html.erb** file. All tests should now be green.
+7. Add some html paragraph to the **app/views/landing/index.html.erb** file. All tests should now be green.
 8. Modify **features/list_articles.feature** with Background (below Feature description, nested):
 ```
 Background:
