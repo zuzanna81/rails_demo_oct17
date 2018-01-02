@@ -3,6 +3,7 @@
 ## at CraftAcademy bootcamp week 5
 
 **Assignment**
+
 The purpose of this assignment is to get you familiar with how routes, controllers, and views interact with each other within the context of a rails application
 
 **Set up the application**
