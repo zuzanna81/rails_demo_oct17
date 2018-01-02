@@ -10,15 +10,13 @@
 * `gem install rails` (to install Rails if not yet done)
 * `rails new rails_demo --database=postgresql --skip-test --skip-bundle`
 * `cd rails_demo`
-
 2. To set up Version Control:
 * In your terminal run `git init`
 * Head over to your GitHub account and create a new repository *rails_bdd*
 * In your terminal run `git remote add origin <repo url>`
 * Add, commit and push your code to GitHub
-
 3. In Gemfile add *rspec-rails* gem to the dev and test group:
-* ```
+```
 group :development, :test do
   gem 'rspec-rails'
   gem 'shoulda-matchers'
@@ -58,7 +56,7 @@ end
 ```
 7. Run `bundle exec rspec` to check if rspec works
 8. Modify Gemfile with *cucumber-rails* and *database_cleaner* gems:
-* ```
+```
 group :development, :test do
   [...]
   gem 'cucumber-rails', require: false
