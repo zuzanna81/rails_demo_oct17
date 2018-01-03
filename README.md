@@ -1,4 +1,4 @@
-# Blog application and Acceptance-Unit Test Cycle with Ruby on Rails
+# Zuzanna's Blog application and Acceptance-Unit Test Cycle with Ruby on Rails
 
 ## at CraftAcademy bootcamp week 5
 
