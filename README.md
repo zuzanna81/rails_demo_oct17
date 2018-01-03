@@ -187,3 +187,8 @@ end
   <% end %>
 </ul>
 ```
+17. Follow the pattern and add some more features for: **Create Article** and **Comment Article**
+
+**Resources**
+
+CraftAcademy course material (week 5)
